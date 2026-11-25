@@ -1,5 +1,27 @@
 {
   "说明": "本地合成演练资料",
-  "业务对象": "批流作业依赖图的历史重算与实时切换",
-  "记录": []
+  "业务对象": "数据产品契约升级的并行消费与发布门槛",
+  "记录": [
+    {
+      "contract": "C-1",
+      "producer": "v1",
+      "schema": "old",
+      "partition": "2026-10-21",
+      "state": "ready"
+    },
+    {
+      "contract": "C-1",
+      "producer": "v2",
+      "schema": "new",
+      "partition": "2026-10-21",
+      "state": "pending"
+    },
+    {
+      "contract": "C-2",
+      "producer": "v1",
+      "schema": "old",
+      "partition": "2026-10-22",
+      "state": "ready"
+    }
+  ]
 }
